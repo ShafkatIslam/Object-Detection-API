@@ -134,4 +134,4 @@ def get_image():
     except FileNotFoundError:
         abort(404)
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host = '0.0.0.0', port=5050)
